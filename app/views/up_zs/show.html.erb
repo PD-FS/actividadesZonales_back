@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @upz.name %>
+</p>
+
+<p>
+  <strong>District area:</strong>
+  <%= @upz.district_area %>
+</p>
+
+<p>
+  <strong>Shape:</strong>
+  <%= @upz.shape %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @upz.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @upz.longitude %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @upz.code %>
+</p>
+
+<%= link_to 'Edit', edit_upz_path(@upz) %> |
+<%= link_to 'Back', upzs_path %>

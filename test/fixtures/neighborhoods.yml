@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  upz: one
+  shape: MyString
+  latitude: 9.99
+  longitude: 9.99
+  district_area: one
+  code: MyString
+
+two:
+  name: MyString
+  upz: two
+  shape: MyString
+  latitude: 9.99
+  longitude: 9.99
+  district_area: two
+  code: MyString

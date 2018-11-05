@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @activity.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @activity.description %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @activity.Institution %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @activity.category %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @activity.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @activity.end_time %>
+</p>
+
+<p>
+  <strong>Profile pic:</strong>
+  <%= @activity.profile_pic %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @activity.capacity %>
+</p>
+
+<p>
+  <strong>Programe calendar:</strong>
+  <%= @activity.programe_calendar %>
+</p>
+
+<p>
+  <strong>Required acceptance:</strong>
+  <%= @activity.required_acceptance %>
+</p>
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>

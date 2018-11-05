@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Interest By Cathegories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @interest_by_cathegories.each do |interest_by_cathegory| %>
+      <tr>
+        <td><%= interest_by_cathegory.user %></td>
+        <td><%= interest_by_cathegory.category %></td>
+        <td><%= link_to 'Show', interest_by_cathegory %></td>
+        <td><%= link_to 'Edit', edit_interest_by_cathegory_path(interest_by_cathegory) %></td>
+        <td><%= link_to 'Destroy', interest_by_cathegory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Interest By Cathegory', new_interest_by_cathegory_path %>

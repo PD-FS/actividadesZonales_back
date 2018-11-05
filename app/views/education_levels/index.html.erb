@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Education Levels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @education_levels.each do |education_level| %>
+      <tr>
+        <td><%= education_level.level %></td>
+        <td><%= link_to 'Show', education_level %></td>
+        <td><%= link_to 'Edit', edit_education_level_path(education_level) %></td>
+        <td><%= link_to 'Destroy', education_level, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Education Level', new_education_level_path %>

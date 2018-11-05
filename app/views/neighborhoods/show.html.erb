@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @neighborhood.name %>
+</p>
+
+<p>
+  <strong>Upz:</strong>
+  <%= @neighborhood.upz %>
+</p>
+
+<p>
+  <strong>Shape:</strong>
+  <%= @neighborhood.shape %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @neighborhood.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @neighborhood.longitude %>
+</p>
+
+<p>
+  <strong>District area:</strong>
+  <%= @neighborhood.district_area %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @neighborhood.code %>
+</p>
+
+<%= link_to 'Edit', edit_neighborhood_path(@neighborhood) %> |
+<%= link_to 'Back', neighborhoods_path %>

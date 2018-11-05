@@ -1,0 +1,107 @@
+<%= form_for(user) do |f| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :document_type_id %>
+    <%= f.text_field :document_type_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :documentNumber %>
+    <%= f.text_field :documentNumber %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label :birthday %>
+    <%= f.date_select :birthday %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blood_type_id %>
+    <%= f.text_field :blood_type_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :neighborhood_id %>
+    <%= f.text_field :neighborhood_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cellphone %>
+    <%= f.text_field :cellphone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :education_level_id %>
+    <%= f.text_field :education_level_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pictureMedium %>
+    <%= f.text_field :pictureMedium %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pictureThumbnail %>
+    <%= f.text_field :pictureThumbnail %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :civicoins %>
+    <%= f.number_field :civicoins %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nationalityrails %>
+    <%= f.text_field :nationalityrails %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @interest_by_cathegory.user %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @interest_by_cathegory.category %>
+</p>
+
+<%= link_to 'Edit', edit_interest_by_cathegory_path(@interest_by_cathegory) %> |
+<%= link_to 'Back', interest_by_cathegories_path %>

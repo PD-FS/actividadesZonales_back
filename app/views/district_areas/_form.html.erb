@@ -1,0 +1,67 @@
+<%= form_for(district_area) do |f| %>
+  <% if district_area.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(district_area.errors.count, "error") %> prohibited this district_area from being saved:</h2>
+
+      <ul>
+      <% district_area.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :initialZipCode %>
+    <%= f.number_field :initialZipCode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastZipCode %>
+    <%= f.number_field :lastZipCode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :surfaceArea %>
+    <%= f.text_field :surfaceArea %>
+  </div>
+
+  <div class="field">
+    <%= f.label :population %>
+    <%= f.text_field :population %>
+  </div>
+
+  <div class="field">
+    <%= f.label :density %>
+    <%= f.text_field :density %>
+  </div>
+
+  <div class="field">
+    <%= f.label :shape %>
+    <%= f.text_field :shape %>
+  </div>
+
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city_id %>
+    <%= f.text_field :city_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

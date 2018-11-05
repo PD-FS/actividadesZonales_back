@@ -1,0 +1,2 @@
+module UpZsHelper
+end

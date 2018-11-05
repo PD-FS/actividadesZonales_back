@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Blood Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Rh</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blood_types.each do |blood_type| %>
+      <tr>
+        <td><%= blood_type.group %></td>
+        <td><%= blood_type.rh %></td>
+        <td><%= link_to 'Show', blood_type %></td>
+        <td><%= link_to 'Edit', edit_blood_type_path(blood_type) %></td>
+        <td><%= link_to 'Destroy', blood_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blood Type', new_blood_type_path %>

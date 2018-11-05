@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Activities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Institution</th>
+      <th>Category</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Profile pic</th>
+      <th>Capacity</th>
+      <th>Programe calendar</th>
+      <th>Required acceptance</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activities.each do |activity| %>
+      <tr>
+        <td><%= activity.name %></td>
+        <td><%= activity.description %></td>
+        <td><%= activity.Institution %></td>
+        <td><%= activity.category %></td>
+        <td><%= activity.start_time %></td>
+        <td><%= activity.end_time %></td>
+        <td><%= activity.profile_pic %></td>
+        <td><%= activity.capacity %></td>
+        <td><%= activity.programe_calendar %></td>
+        <td><%= activity.required_acceptance %></td>
+        <td><%= link_to 'Show', activity %></td>
+        <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
+        <td><%= link_to 'Destroy', activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity', new_activity_path %>

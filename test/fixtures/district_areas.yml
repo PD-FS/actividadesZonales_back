@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  initialZipCode: 1
+  lastZipCode: 1
+  surfaceArea: 9.99
+  population: 9.99
+  density: 9.99
+  shape: MyString
+  latitude: 9.99
+  longitude: 9.99
+  city: one
+
+two:
+  name: MyString
+  initialZipCode: 1
+  lastZipCode: 1
+  surfaceArea: 9.99
+  population: 9.99
+  density: 9.99
+  shape: MyString
+  latitude: 9.99
+  longitude: 9.99
+  city: two

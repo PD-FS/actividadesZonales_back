@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>District Areas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Initialzipcode</th>
+      <th>Lastzipcode</th>
+      <th>Surfacearea</th>
+      <th>Population</th>
+      <th>Density</th>
+      <th>Shape</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>City</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @district_areas.each do |district_area| %>
+      <tr>
+        <td><%= district_area.name %></td>
+        <td><%= district_area.initialZipCode %></td>
+        <td><%= district_area.lastZipCode %></td>
+        <td><%= district_area.surfaceArea %></td>
+        <td><%= district_area.population %></td>
+        <td><%= district_area.density %></td>
+        <td><%= district_area.shape %></td>
+        <td><%= district_area.latitude %></td>
+        <td><%= district_area.longitude %></td>
+        <td><%= district_area.city %></td>
+        <td><%= link_to 'Show', district_area %></td>
+        <td><%= link_to 'Edit', edit_district_area_path(district_area) %></td>
+        <td><%= link_to 'Destroy', district_area, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New District Area', new_district_area_path %>
